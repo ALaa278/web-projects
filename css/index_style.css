@@ -1,0 +1,61 @@
+body
+{
+    font-size: 1rem;
+    font-family: 'Segoe UI Light';
+}
+.item
+{
+  position: relative;
+  margin-bottom: 1.4rem;
+  cursor: pointer;    
+}
+.item_caption
+{
+    background-color: #fff;
+    position: absolute;
+   bottom: 2rem;
+   width: 80%;
+   left: 10%;
+   padding: .6rem;
+
+}
+
+.box_container
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.55) ;
+    transform: scale(0,0);
+}
+.box_item
+{
+    width: 50%;
+    height: 30rem;
+    background-image: url(../images/asset\ 10.jpeg);
+    background-size: 100% 100%;
+    position: relative;
+    transform: scale(0,0);
+    transition: transform 1s;
+}
+#close
+{
+    position: absolute;
+     top: 0rem;
+     right: 0rem;  
+}
+.box_item i
+{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+@media (max-width : 800px)
+{
+    .box_item
+    {
+        width: 80%;
+    }
+}
